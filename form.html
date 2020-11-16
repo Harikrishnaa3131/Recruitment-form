@@ -18,7 +18,7 @@
           <label class="col-auto my-1" for="inputEmail4">Name:</label>
           <div class="form-row col-auto my-1">
             <div class="col">
-              <input type="text" class="form-control " placeholder="Janie">
+              <input type="text" class="form-control " placeholder="Janie" required>
             </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Yorke">
@@ -27,25 +27,22 @@
     
           <div class="form-group col-auto my-1">
             <label for="exampleInputEmail1">Registeration Number:</label>
-            <input type="email" class="form-control col-auto my-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="RAXXXXXXXXXXXXX">
+            <input type="text" class="form-control col-auto my-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="RAXXXXXXXXXXXXX" required>
             
           </div>
     
           <div class="form-group col-auto my-1">
             <label for="exampleInputEmail1">Email address:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@gmail.com">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@gmail.com" required>
            
           </div>
     
           <div class="form-group col-auto my-1">
             <label for="exampleInputEmail1">Phone Number:</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9876543210">
+            <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9876543210" required>
             
           </div>
     
-        
-    
-
         <!--Sanskriti-->
         <div class="col-auto my-1">
             <label  for="inlineFormCustomSelect">Year of study</label>
@@ -165,13 +162,17 @@
             <label  for="inlineFormCustomSelect">Choose the domain of which you want to become a part</label>
             <label  for="inlineFormCustomSelect">(You can apply for multiple domains)</label>
             <br>
-            <input class="col-auto my-1-input" type="checkbox" value="" id="Technical">
+            <input class="col-auto my-1-input" type="checkbox" value="1" id="Technical">
             <label class="col-auto my-1-label" for="Techical">
                 Technical
             </label>
-            <input class="col-auto my-1-input" type="checkbox" value="" id="Corporate">
+            <input class="col-auto my-1-input" type="checkbox" value="2" id="Corporate">
             <label class="col-auto my-1-label" for="Corporate">
                 Corporate
+            </label>
+            <input class="col-auto my-1-input" type="checkbox" value="3" id="Creatives">
+            <label class="col-auto my-1-label" for="Creatives">
+                Creatives
             </label>
         </div>
      
@@ -218,11 +219,11 @@
 </div>
    <div class="form-group1 col-auto my-1">
       <label for="email">Linkedin:</label>
-      <input type="url" class="form-control" id="linkedinurl" placeholder="https://linkedin.com/username" name="linkedin">
+      <input type="url" class="form-control" id="linkedinurl" placeholder="https://linkedin.com/username" name="linkedin" required>
   </div>
   <div class="form-group2 col-auto my-1">
       <label for="email">Github:</label>
-      <input type="url" class="form-control" id="githuburl" placeholder="https://github.com/username" name="github">
+      <input type="url" class="form-control" id="githuburl" placeholder="https://github.com/username" name="github" required>
   </div>
   <div class="form-group col-auto my-1">
       <label for="Questionaire1"> About you </label>
@@ -231,6 +232,7 @@
   </div>
   <div class="form-group col-auto my-1">
       <label for="Questionaire1"> Why do u want to be a part of codechef srm student chapter? </label>
+      <input type="url" class="form-control" id="githuburl" placeholder="https://github.com/username" name="github" required>
       <textarea class="form-control" id="Questionaire1" rows="3">
      </textarea>
   </div>
