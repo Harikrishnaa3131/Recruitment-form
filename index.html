@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>CCSC Recruitment</title>
+
     <style>
         #B1{
             display: none;
@@ -39,6 +40,7 @@
 
     <section class="mx-2">
         <form>
+
           
           <div class="form-row col-auto my-1">
             <div class="col">
@@ -48,6 +50,9 @@
             <div class="col">
                 <label  for="two">Last Name:</label>
               <input type="text" class="form-control" id="two" placeholder="Yorke" required>
+
+      
+
             </div>
           </div>
     
@@ -69,14 +74,14 @@
             
           </div>
     
-        
-    
 
         <!--Sanskriti-->
         <div class="col-auto my-1">
             <label  for="inlineFormCustomSelect">Year of study</label>
             <br>
+
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="I">First</option>
                 <option value="II">Second</option>
@@ -85,6 +90,7 @@
         <div class="col-auto my-1">
             <label  for="inlineFormCustomSelect">Branch</label>
             <br>
+
             <select class="custom-select mr-sm-2" id="branch" onchange="display()" required>
                 <option selected><p>Choose..</p></option>
                 <option value="1" id="b1" >Computer Science and Engineering</option>
@@ -105,13 +111,16 @@
                 <option value="16" id="b16"  >Chemical Engineering</option>
                 <option value="17" id="b17"  >Nanotechnology</option>
 
+
             </select>
         </div>
         <!-- 1 Computer Science-->
+
         <div class="col-auto my-1" id="B1">
             <label  for="inlineFormCustomSelect1">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect1" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Artificial Intelligence and Machine Learning</option>
@@ -125,10 +134,12 @@
             </select>
         </div>
         <!-- 6 Electronics and Communication Engineering-->
+
         <div class="col-auto my-1" id="B6">
             <label  for="inlineFormCustomSelect2">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Biomedical Engineering</option>
@@ -136,40 +147,48 @@
             </select>
         </div>
         <!-- 9 Mechatronics-->
+
         <div class="col-auto my-1" id="B9">
             <label  for="inlineFormCustomSelect3">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect3" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Robotics</option>
             </select>
         </div>
         <!-- 10 Civil Engineering-->
+
         <div class="col-auto my-1" id="B10">
             <label  for="inlineFormCustomSelect4">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect4" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Computer Application</option>
             </select>
         </div>
         <!-- 12 Automobile Engineering-->
+
         <div class="col-auto my-1" id="B12">
             <label  for="inlineFormCustomSelect5">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect5" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Automotive Electronics</option>
             </select>
         </div>
         <!-- 14 Biotechnology-->
+
         <div class="col-auto my-1" id="B14">
             <label  for="inlineFormCustomSelect6">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect6" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Regenerative Medicine</option>
@@ -177,10 +196,12 @@
             </select>
         </div>
         <!-- 16 Chemical Eng-->
+
         <div class="col-auto my-1" id="B16">
             <label  for="inlineFormCustomSelect7">Specialisation</label>
             <br>
             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect7" required>
+
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
                 <option value="2">Desalination and Water Treatments</option>
@@ -191,6 +212,7 @@
             <label  for="inlineFormCustomSelect">Choose the domain of which you want to become a part</label>
             <label  for="inlineFormCustomSelect">(You can apply for multiple domains)</label>
             <br>
+
             <input onclick="display2(this)" class="col-auto my-1-input" type="checkbox" value="" id="Technical">
             <label class="col-auto my-1-label" for="Techical">
                 Technical
@@ -200,6 +222,7 @@
                 Corporate
             </label>
             <input onclick="display2(this)" class="col-auto my-1-input" type="checkbox" value="" id="Creatives">
+
             <label class="col-auto my-1-label" for="Creatives">
                 Creatives
             </label>
@@ -208,17 +231,20 @@
         <!--Harikrishna-->
 
  
+
   <div class="col-auto my-1 d-none" id="op2">
     <label for="inlineFormCustomSelectA">Corporate Sub-Domain</label>
     <br>
     <!-- Corporate -->
     <select class="custom-select mr-sm-2 " id="inlineFormCustomSelectA" required>
+
         <option selected><p>Choose..</p></option>
         <option value="1">Management</option>
         <option value="2">Sponsorship</option>
         
     </select>
 </div>
+
     <!--<select class="custom-select mr-sm-2 d-none" id="inlineFormCustomSelect" required>-->
 <div class="col-auto my-1 d-none" id="op3">
 <label for="inlineFormCustomSelectB">Creatives Sub-Domain</label>
@@ -226,6 +252,7 @@
     <!-- Creatives -->
     <select class="custom-select mr-sm-2" id="inlineFormCustomSelectB" required>
   
+
         <option selected><p>Choose..</p></option>
         <option value="1">Content Writing</option>
         <option value="2">Video Editing</option>
@@ -235,9 +262,11 @@
     <!-- Technical -->
     
     
+
     <div class="col-auto my-1 d-none" id="op1">
       <label for="inlineFormCustomSelectC"> Technical Sub-Domain</label>
     <select class="custom-select mr-sm-2" id="inlineFormCustomSelectC" required>
+
         <option selected><p>Choose..</p></option>
         <option value="1">Data Science</option>
         <option value="2">Competitive Coding</option>
@@ -257,11 +286,13 @@
   </div>
   <div class="form-group col-auto my-1">
       <label for="Questionaire1"> About you </label>
+
       <textarea class="form-control" id="Questionaire1" rows="7" minlength="750" maxlength="3000" required></textarea>
   </div>
   <div class="form-group col-auto my-1">
       <label for="Questionaire1"> Why do u want to be a part of codechef srm student chapter? </label>
       <textarea class="form-control" id="Questionaire1" rows="7" minlength="750" maxlength="3000" required></textarea>
+
   </div>
   <br>
   <div class="col-auto my-1">
@@ -285,6 +316,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
+
     <script>
      
      function display(){
@@ -460,6 +492,7 @@
 
 
   </script>
+
   </body>
 </html>
 
