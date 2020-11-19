@@ -80,9 +80,9 @@
             <label  for="inlineFormCustomSelect">Year of study</label>
             <br>
 
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" required>
+            <select class="custom-select mr-sm-2" id="year" required>
 
-                <option selected><p>Choose..</p></option>
+                <option value="0" selected>Choose..</option>
                 <option value="I">First</option>
                 <option value="II">Second</option>
             </select>
@@ -92,7 +92,7 @@
             <br>
 
             <select class="custom-select mr-sm-2" id="branch" onchange="display()" required>
-                <option selected><p>Choose..</p></option>
+                <option value="0" selected>Choose..</option>
                 <option value="1" id="b1" >Computer Science and Engineering</option>
                 <option value="2" id="b2"  >Computer Science and Business Systems</option>
                 <option value="3" id="b3"  >Information Technology</option>
@@ -119,7 +119,7 @@
         <div class="col-auto my-1" id="B1">
             <label  for="inlineFormCustomSelect1">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect1" required>
+            <select class="custom-select mr-sm-2" id="CSE" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -138,7 +138,7 @@
         <div class="col-auto my-1" id="B6">
             <label  for="inlineFormCustomSelect2">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2" required>
+            <select class="custom-select mr-sm-2" id="ECE" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -151,7 +151,7 @@
         <div class="col-auto my-1" id="B9">
             <label  for="inlineFormCustomSelect3">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect3" required>
+            <select class="custom-select mr-sm-2" id="Mechatronics" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -163,7 +163,7 @@
         <div class="col-auto my-1" id="B10">
             <label  for="inlineFormCustomSelect4">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect4" required>
+            <select class="custom-select mr-sm-2" id="Civil" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -175,7 +175,7 @@
         <div class="col-auto my-1" id="B12">
             <label  for="inlineFormCustomSelect5">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect5" required>
+            <select class="custom-select mr-sm-2" id="Automobile" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -187,7 +187,7 @@
         <div class="col-auto my-1" id="B14">
             <label  for="inlineFormCustomSelect6">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect6" required>
+            <select class="custom-select mr-sm-2" id="Biotechnology" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -200,7 +200,7 @@
         <div class="col-auto my-1" id="B16">
             <label  for="inlineFormCustomSelect7">Specialisation</label>
             <br>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect7" required>
+            <select class="custom-select mr-sm-2" id="Chemical" required>
 
                 <option selected><p>Choose..</p></option>
                 <option value="1">None</option>
@@ -296,7 +296,7 @@
   </div>
   <br>
   <div class="col-auto my-1">
-    <button type="submit" class="btn btn-primary col-auto my-1">Submit</button>
+    <button type="submit" class="btn btn-primary col-auto my-1" onclick="return validateDropdown()">Submit</button>
   </div>
   
 
@@ -489,8 +489,40 @@
         document.getElementById("op3").classList.toggle("d-none");
       }
     }
+    function validateDropdown(){
+        var status1=validateBranch();
+        var status2=validateYear();
+        if(status1==true && status2==true){
+            return true;
+        }
+        return false;
+    }
 
-
+    function validateYear(){
+        var x=document.getElementById("year").value;
+        if (x=="0"){
+            alert("Please select your year of study");
+            return false;
+        }
+        return true;
+    }
+    function validateBranch(){
+        var x=document.getElementById("branch").value;
+        if (x=="0"){
+            alert("Please select your branch of study");
+            return false;
+        }
+       return true;
+    }
+/*
+    function validateSpecialisation(){
+        var x=document.getElementById("branch").value;
+        if (x=="0"){
+            alert("Please select your branch of study");
+            return false;
+        }
+        return true;
+    }*/
   </script>
 
   </body>
